@@ -1,0 +1,337 @@
+/* Global styling */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    padding-top: 5rem;
+    font-family: font;
+    color: hsl(201, 11%, 66%);
+    font-size: 18px;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+p {
+    font-weight: 400;
+}
+
+h2 {
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+h3 {
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+
+}
+
+@font-face {
+    font-family: font;
+    src: url(./Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+}
+
+main {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border: none;
+    font-family: font;
+    font-weight: 600;
+    border-radius: 30px;
+    margin: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: 0.2s;
+}
+
+.button1 {
+    background: hsl(171, 66%, 44%);
+    box-shadow: 0 3px 2px hsl(171, 64%, 29%);
+}
+
+.button1:hover {
+    opacity: 0.85;
+    box-shadow: 4px 6px 0px hsl(171, 64%, 29%);
+    transition: 0.5s;
+}
+
+.button2 {
+    background: hsl(233, 100%, 69%);
+    box-shadow: 0 3px 0 hsl(233, 100%, 29%);
+}
+
+.button2:hover {
+    opacity: 0.85;
+    box-shadow: 4px 6px 0px hsl(233, 100%, 29%);
+    transition: 0.5s;
+
+}
+
+.footer p {
+    transition: .5s;
+}
+
+/* Hovers */
+.footer p:hover {
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+
+.socialIcons i {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.socialIcons i:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+/* for mobile */
+@media (max-width:375px) {
+    body {
+        background-image: url(./images/bg-header-mobile.png);
+
+    }
+
+    main {
+        justify-content: center;
+        padding: 1px;
+    }
+
+    h2 {
+        padding: 0 20px 0 20px;
+    }
+
+    h3 {
+        padding: 0 60px 0 60px;
+    }
+
+    p {
+        padding: 5px 0 5px 0;
+        text-align: center;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        margin-inline: auto;
+        width: 300px;
+        height: 45px;
+    }
+
+    /* grid styling */
+    main {
+        gap: 5rem;
+    }
+
+    .DesktopImage {
+        width: 340px;
+    }
+
+    .DevicesImage {
+        width: 340px;
+    }
+
+    .companies-logo {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footerLogo {
+        width: 40px;
+    }
+
+    .socialIcons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-inline: auto;
+
+    }
+
+
+}
+
+/* for samsung fold. just extra */
+@media (max-width:281px) {
+    .DesktopImage {
+        width: 220px;
+    }
+
+    .DevicesImage {
+        width: 220px;
+    }
+
+    button {
+        width: 230px;
+    }
+
+    body {
+        background: rgb(24, 21, 21);
+    }
+}
+
+
+
+
+
+
+/* for Desktop */
+
+
+@media (min-width:376px) {
+    body {
+        background-image: url(./images/bg-header-desktop.png);
+        background-position: top;
+        background-size: 1300px;
+        font-size: 18px;
+        background-repeat: no-repeat;
+    }
+
+    main {
+        width: 1000px;
+        gap: 5rem;
+    }
+
+
+    .headerImg {
+        width: 80px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+
+    h2 {
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .DesktopImage {
+        width: 500px;
+        position: relative;
+        right: 50px;
+    }
+
+    .DevicesImage {
+        width: 500px;
+    }
+
+    button {
+        margin-inline: auto;
+        width: 200px;
+        height: 45px;
+        margin: 10px;
+    }
+
+    .twoColumnFlex {
+        display: flex;
+    }
+
+
+
+    .DesktopImage-side-details {
+        font-size: 16px;
+        padding: 0px 50px 20px 10px;
+        text-align: start;
+        width: 390px;
+    }
+
+    .DesktopImage-side-details p {
+        padding: 0 0px 0 0px;
+    }
+
+    .workFlow-tools {
+        display: flex;
+        align-items: center;
+        margin-inline: auto;
+        justify-content: space-evenly;
+
+
+    }
+
+    .workFlow-tools div {
+        font-size: 15px;
+        width: 400px;
+
+    }
+
+    .companies-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 20px 0 20px;
+    }
+
+
+
+    .footer {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        justify-content: space-around;
+        padding: 0px 30px 0px 30px;
+        margin-inline: auto;
+        width: 930px;
+    }
+
+    .footerLogo {
+        width: 40px;
+        margin-left: 30px;
+    }
+
+    .footerInfo {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        text-align: start;
+        font-size: 15px;
+    }
+
+    .info2 {
+        grid-row-start: 2;
+    }
+
+    .info4 {
+        grid-row-start: 2;
+    }
+
+    .firstParagraph {
+        padding: 0 230px 30px 230px;
+        font-size: 15.5px;
+    }
+
+    .secondParagraph {
+        padding: 0 200px 0px 200px;
+        margin-bottom: 70px;
+    }
+
+    .thirdParagraph {
+        padding: 0 200px 0px 200px;
+        margin-bottom: 70px;
+    }
+
+    .forthParagraph {
+        padding: 0 200px 0px 200px;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+.socialIcons i {
+    margin-right: 20px;
+}
