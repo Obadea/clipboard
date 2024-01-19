@@ -91,7 +91,7 @@ button {
 }
 
 /* for mobile */
-@media (max-width:375px) {
+@media screen and (max-width: 680px) {
     body {
         background-image: url(./images/bg-header-mobile.png);
 
